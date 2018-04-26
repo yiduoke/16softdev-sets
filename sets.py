@@ -6,8 +6,6 @@
 def intersection(set1, set2):
     return [x for x in set1 if x in set1 and x in set2]
 
-# print intersection({1, 2, 3}, {2, 3, 4})
-
 def difference(set1, set2):
     return [x for x in set1 if x in set1 and x not in set2]
 
@@ -17,5 +15,5 @@ def symmetric_diff(set1, set2):
 def union(set1, set2):
     return intersection(set1, set2) + difference(set1, set2) + difference(set2, set1)
 
-# print union({1, 2, 3}, {2, 3, 4})
-print symmetric_difference({1, 2, 3}, {2, 3, 4})
+def cartesian(set1, set2):
+    return [(x, y) for x in set1 for y in set2]
