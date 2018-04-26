@@ -17,5 +17,5 @@ def symmetric_diff(set1, set2):
 def union(set1, set2):
     return intersection(set1, set2) + difference(set1, set2) + difference(set2, set1)
 
-print union({1, 2, 3}, {2, 3, 4})
-# print difference({1, 2, 3}, {2, 3, 4})
+# print union({1, 2, 3}, {2, 3, 4})
+print symmetric_difference({1, 2, 3}, {2, 3, 4})
